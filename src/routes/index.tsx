@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useRef, useState } from 'react';
-import { ArrowDown, ArrowUpRight, Check, Clock3, Heart, Instagram, MapPin, MessageCircle, Phone, Scissors, ShieldCheck, Sparkles, Star, Wallet, Wind } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Clock3, Heart, Instagram, MapPin, MessageCircle, Phone, Scissors, ShieldCheck, Sparkles, Star, Wallet, Wind } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 import { Header, Footer, CallButton, RouteButton } from '@/components/asmer-shell';
