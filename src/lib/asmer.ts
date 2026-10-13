@@ -43,4 +43,3 @@ export const reviewQuotes = [
   'Als Frau zum ersten Mal hier – und begeistert. Man fühlt sich sofort willkommen.',
 ];
 
-export const photoChecklist = ['Hero: Fade-Close-up im Spiegel', 'Rasiermesser an der Kontur', 'Vorher/Nachher mit Einverständnis', 'Barber bei der Arbeit / [TEAMFOTOS]', 'Salon-Innenraum', 'Aussenansicht an der Pizolstrasse 4'];
