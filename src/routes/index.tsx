@@ -32,7 +32,7 @@ export const Route = createFileRoute('/')({
 
 function Stars() { return <span className="stars" aria-label="5 von 5 Sternen">{Array.from({length:5}, (_,i) => <Star key={i} aria-hidden="true" />)}</span>; }
 const gallery = [
-  { photo: beardAsset.url, title: 'Saubere Kanten', alt: 'Kunde mit frisch geschnittenem Bart im Salon', width: 279, height: 343 },
+  { photo: beardAsset.url, title: 'Zweifelsfrei', alt: 'Kunde mit frisch geschnittenem Bart im Salon', width: 279, height: 343 },
   { photo: scissorsAsset.url, title: 'Mit ruhiger Hand', alt: 'Barber schneidet mit der Schere die Haare eines Kunden', width: 513, height: 789 },
   { photo: cutAsset.url, title: 'Dein neuer Schnitt', alt: 'Haarschnitt von hinten mit kurzem Nacken und längerem Deckhaar', width: 516, height: 672 },
   { photo: salonAsset.url, title: 'Willkommen bei Asmer', alt: 'Asmer Salon mit drei Barberstühlen, Spiegeln und geometrischer Deckenbeleuchtung', width: 733, height: 915 },
