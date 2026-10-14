@@ -6,8 +6,6 @@ import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/compone
 import { Header, Footer, CallButton, RouteButton } from '@/components/asmer-shell';
 import { business, getOpeningStatus, hours, services, reviewQuotes } from '@/lib/asmer';
 import salonAsset from '@/assets/asmer-salon.png.asset.json';
-import welcomeAsset from '@/assets/asmer-welcome.png.asset.json';
-import fadeAsset from '@/assets/asmer-fade.png.asset.json';
 import beardAsset from '@/assets/asmer-beard.png.asset.json';
 import cutAsset from '@/assets/asmer-cut.png.asset.json';
 import scissorsAsset from '@/assets/asmer-scissors.png.asset.json';
