@@ -32,12 +32,9 @@ export const Route = createFileRoute('/')({
 
 function Stars() { return <span className="stars" aria-label="5 von 5 Sternen">{Array.from({length:5}, (_,i) => <Star key={i} aria-hidden="true" />)}</span>; }
 const gallery = [
-  { photo: fadeAsset.url, title: 'Sauberer Fade', alt: 'Kurzer Haarschnitt mit sauberem Fade in Seitenansicht', width: 279, height: 329 },
   { photo: beardAsset.url, title: 'Klare Bartkonturen', alt: 'Kunde mit präzise geschnittenen Bartkonturen im Salon', width: 279, height: 343 },
   { photo: scissorsAsset.url, title: 'Mit ruhiger Hand', alt: 'Barber schneidet mit der Schere die Haare eines Kunden', width: 513, height: 789 },
-  { photo: welcomeAsset.url, title: 'Bei uns im Salon', alt: 'Barber und lächelnder Kunde bei Asmer Coiffeur', width: 514, height: 774 },
   { photo: cutAsset.url, title: 'Dein neuer Schnitt', alt: 'Haarschnitt von hinten mit kurzem Nacken und längerem Deckhaar', width: 516, height: 672 },
-  { photo: barberAsset.url, title: 'Zeit für deinen Look', alt: 'Barber arbeitet mit Kamm am Haarschnitt eines Kunden', width: 517, height: 870 },
   { photo: salonAsset.url, title: 'Willkommen bei Asmer', alt: 'Asmer Salon mit drei Barberstühlen, Spiegeln und geometrischer Deckenbeleuchtung', width: 733, height: 915 },
 ];
 
@@ -95,7 +92,7 @@ function Index() {
       <p className="note">Für Bartpflege, Schnitt & Bart oder Styling ruf uns bitte an und frage nach dem passenden Angebot.</p>
     </div></section>
     <section id="handwerk" className="section craft-section"><div className="container-asmer craft-grid">
-      <div className="craft-photo reveal"><img src={welcomeAsset.url} width={514} height={774} loading="lazy" alt="Ein lächelnder Kunde und sein Barber im Asmer Salon" /></div>
+      <div className="craft-photo reveal"><img src={barberAsset.url} width={517} height={870} loading="lazy" alt="Ein Barber von Asmer arbeitet mit Kamm am Haarschnitt eines Kunden" /></div>
       <div className="craft-copy reveal"><span className="eyebrow">BEI ASMER</span><h2 className="section-heading">Wir hören zu.<br /><em>Dann schneiden wir.</em></h2><p className="section-copy">Bevor wir zur Schere greifen, hören wir dir zu. Wie trägst du dein Haar? Was soll anders werden? Wir nehmen uns Zeit und schneiden so, wie du es dir wünschst – mit sauberen Übergängen und einem gepflegten Finish. Dabei darfst du einfach abschalten.</p><p className="craft-quote">«Genau so, wie du es dir<br />vorgestellt hast.»</p><p className="welcome"><Heart aria-hidden="true" />Herren und Damen sind bei uns herzlich willkommen.</p><Button variant="nav" asChild className="mt-6"><a href="#kontakt">Lerne uns kennen<ArrowUpRight aria-hidden="true" /></a></Button></div>
     </div></section>
     <section id="galerie" className="section"><div className="container-asmer">
