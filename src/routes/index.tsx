@@ -32,7 +32,7 @@ export const Route = createFileRoute('/')({
 
 function Stars() { return <span className="stars" aria-label="5 von 5 Sternen">{Array.from({length:5}, (_,i) => <Star key={i} aria-hidden="true" />)}</span>; }
 const gallery = [
-  { photo: beardAsset.url, title: 'Klare Bartkonturen', alt: 'Kunde mit präzise geschnittenen Bartkonturen im Salon', width: 279, height: 343 },
+  { photo: beardAsset.url, title: 'Der Bart sitzt', alt: 'Kunde mit frisch geschnittenem Bart im Salon', width: 279, height: 343 },
   { photo: scissorsAsset.url, title: 'Mit ruhiger Hand', alt: 'Barber schneidet mit der Schere die Haare eines Kunden', width: 513, height: 789 },
   { photo: cutAsset.url, title: 'Dein neuer Schnitt', alt: 'Haarschnitt von hinten mit kurzem Nacken und längerem Deckhaar', width: 516, height: 672 },
   { photo: salonAsset.url, title: 'Willkommen bei Asmer', alt: 'Asmer Salon mit drei Barberstühlen, Spiegeln und geometrischer Deckenbeleuchtung', width: 733, height: 915 },
@@ -96,7 +96,7 @@ function Index() {
       <div className="craft-copy reveal"><span className="eyebrow">BEI ASMER</span><h2 className="section-heading">Wir hören zu.<br /><em>Dann schneiden wir.</em></h2><p className="section-copy">Bevor wir zur Schere greifen, hören wir dir zu. Wie trägst du dein Haar? Was soll anders werden? Wir nehmen uns Zeit und schneiden so, wie du es dir wünschst – mit sauberen Übergängen und einem gepflegten Finish. Dabei darfst du einfach abschalten.</p><p className="craft-quote">«Genau so, wie du es dir<br />vorgestellt hast.»</p><p className="welcome"><Heart aria-hidden="true" />Herren und Damen sind bei uns herzlich willkommen.</p><Button variant="nav" asChild className="mt-6"><a href="#kontakt">Lerne uns kennen<ArrowUpRight aria-hidden="true" /></a></Button></div>
     </div></section>
     <section id="galerie" className="section"><div className="container-asmer">
-      <div className="section-top reveal"><div><span className="eyebrow">EINBLICKE</span><h2 className="section-heading">Schnitte. Menschen.<br /><em>Unser Salon.</em></h2></div><Button variant="nav" asChild><a href={business.instagram} target="_blank" rel="noopener noreferrer"><Instagram aria-hidden="true" />Mehr auf Instagram<ArrowUpRight aria-hidden="true" /></a></Button></div>
+      <div className="section-top reveal"><div><span className="eyebrow">EINBLICKE</span><h2 className="section-heading">So sieht es<br /><em>bei uns aus.</em></h2></div><Button variant="nav" asChild><a href={business.instagram} target="_blank" rel="noopener noreferrer"><Instagram aria-hidden="true" />Mehr auf Instagram<ArrowUpRight aria-hidden="true" /></a></Button></div>
       <div className="gallery-grid reveal">{gallery.map((image,index) => <Button variant="ghost" className="gallery-image" key={image.title} aria-label={`${image.title} – Foto vergrössern`} onClick={() => setSelectedPhoto(index)}><img src={image.photo} alt={image.alt} loading="lazy" width={image.width} height={image.height} /><span className="gallery-title">{image.title}</span><ArrowUpRight className="gallery-arrow" aria-hidden="true" /></Button>)}</div>
 
     </div></section>
