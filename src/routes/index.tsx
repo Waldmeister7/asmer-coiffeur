@@ -80,7 +80,7 @@ function Index() {
       <div className="hero-bottom-shade" />
       <div className="container-asmer hero-content">
         <p className="hero-location"><MapPin size={13} aria-hidden="true" />SARGANS · BARBER & COIFFEUR</p>
-        <h1>Asmer Coiffeur.<br /><em>Dein Barber.</em></h1>
+        <h1>Asmer Coiffeur.<br /><em>Dein Salon.</em></h1>
         <p className="hero-sub">Ein guter Schnitt. Ein entspanntes Gespräch.<br />Wir nehmen uns Zeit für deinen Look. Hier in Sargans.</p>
         <div className="hero-actions"><CallButton /><Button variant="quiet" asChild><a href="#leistungen">Leistungen ansehen<ArrowUpRight aria-hidden="true" /></a></Button></div>
         <a className="hero-rating" href={business.reviews} target="_blank" rel="noopener noreferrer"><Stars /><span><strong>5.0</strong> · 50 Google-Bewertungen</span><ArrowUpRight size={12} aria-hidden="true" /></a>
