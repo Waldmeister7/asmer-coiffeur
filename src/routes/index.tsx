@@ -87,7 +87,7 @@ function Index() {
       return <div className="trust-item" key={String(label)}><TrustIcon aria-hidden="true" /><span>{String(label)}</span></div>;
     })}</div></div>
     <section id="leistungen" className="section"><div className="container-asmer">
-      <div className="section-top reveal"><div><span className="eyebrow">UNSERE LEISTUNGEN</span><h2 className="section-heading">Was darf es<br /><em>für dich sein?</em></h2></div><p className="section-copy max-w-80">Kein Schnitt von der Stange.<br />Sondern einer, der zu dir passt.</p></div>
+      <div className="section-top reveal"><div><span className="eyebrow">UNSERE LEISTUNGEN</span><h2 className="section-heading">Was darf es<br /><em>für dich sein?</em></h2></div><p className="section-copy max-w-80">.</p></div>
       <div className="service-grid">{services.map((service,index) => { const Icon = icons[index] ?? Scissors; return <article className="service-card reveal" key={service.name}><div className="service-card-top"><Icon aria-hidden="true" /><span className="service-number">0{index+1}</span></div><h3>{service.name}</h3><p>{service.text}</p></article>; })}</div>
       <p className="note">Für Bartpflege, Schnitt & Bart oder Styling ruf uns bitte an und frage nach dem passenden Angebot.</p>
     </div></section>
