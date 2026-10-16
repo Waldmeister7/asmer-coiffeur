@@ -24,7 +24,7 @@ export function Header() {
   return <>
     <a href="#hauptinhalt" className="skip-link">Zum Inhalt</a>
     <header className="site-header"><div className="container-asmer header-inner"><Brand />
-      <nav className="desktop-nav" aria-label="Hauptnavigation">{nav.map(([name,id]) => <Button variant="nav" asChild key={id}><a href={`/#${id}`}>{name}</a></Button>)}<CallButton className="header-cta">Termin anrufen</CallButton></nav>
+      <nav className="desktop-nav" aria-label="Hauptnavigation">{nav.map(([name,id]) => <Button variant="nav" asChild key={id}><a href={`/#${id}`}>{name}</a></Button>)}<CallButton className="header-cta">{'Termin buchen\n'}</CallButton></nav>
       <Button variant="ghost" size="icon" className="mobile-menu-toggle" aria-label={menu ? 'Menü schliessen' : 'Menü öffnen'} aria-expanded={menu} aria-controls="mobile-navigation" onClick={() => setMenu(!menu)}>{menu ? <X /> : <Menu />}</Button>
     </div>{menu && <nav className="mobile-nav" id="mobile-navigation" aria-label="Mobile Navigation">{nav.map(([name,id]) => <Button variant="nav" asChild key={id}><a href={`/#${id}`} onClick={() => setMenu(false)}>{name}</a></Button>)}<CallButton>Termin anrufen</CallButton></nav>}</header>
     <div className="mobile-bottom" aria-label="Schnellkontakt"><CallButton>Anrufen</CallButton><RouteButton>Route</RouteButton></div>
